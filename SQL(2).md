@@ -81,7 +81,7 @@ USER is "SCOTT"
 
 계정잠금까지 잘 풀어주니 그제서야 접속이 되고 사용자가 SCOTT 계정으로 바뀌었다.
 
-![Untitled](SQL(2)%20200b35f3bb784006a0b0afbf02416c0f/Untitled.png)
+![Untitled](./img/SQL(2)/Untitled.png)
 
 Oracle SQL Developer까지 잘 연결이 되었다.
 
@@ -148,14 +148,14 @@ INSERT INTO EMP VALUES
 
 - DEPT 테이블
     
-    ![Untitled](SQL(2)%20200b35f3bb784006a0b0afbf02416c0f/Untitled%201.png)
+    ![Untitled](./img/SQL(2)/Untitled%201.png)
     
 - EMP 테이블
     
-    ![Untitled](SQL(2)%20200b35f3bb784006a0b0afbf02416c0f/Untitled%202.png)
+    ![Untitled](./img/SQL(2)/Untitled%202.png)
     
 
-Oracle 데이터 타입은 [SQL(1)](https://www.notion.so/SQL-1-c0e3f412bf49494989c833bdff65d56f) 에 정리해두었다.
+Oracle 데이터 타입은 [SQL(1)](SQL(1).md) 에 정리해두었다.
 이제 이 데이터들을 가지고 내용 정리 및 연습문제 풀이를 할 것이다.
 
 ### JOIN
@@ -240,7 +240,7 @@ Oracle 데이터 타입은 [SQL(1)](https://www.notion.so/SQL-1-c0e3f412bf494949
     
     OUTER JOIN은 아래와 같이 밴다이어그램으로도 정리하여 접근할 수 있다.
     
-    ![Untitled](SQL(2)%20200b35f3bb784006a0b0afbf02416c0f/Untitled%203.png)
+    ![Untitled](./img/SQL(2)/Untitled%203.png)
     
 
 ### SUBQUERY
@@ -248,7 +248,7 @@ Oracle 데이터 타입은 [SQL(1)](https://www.notion.so/SQL-1-c0e3f412bf494949
 SQL 문장 내에 포함된 또 다른 SQL 문장으로, 
 주로 다른 SQL 문장의 조건절(WHERE 절) 또는 SELECT 절, FROM 절에서 사용한다.
 
-![Untitled](SQL(2)%20200b35f3bb784006a0b0afbf02416c0f/Untitled%204.png)
+![Untitled](./img/SQL(2)/Untitled%204.png)
 
 ### DDL (DATA DEFINITION LANGUAGE)
 
@@ -305,7 +305,7 @@ SQL 문장 내에 포함된 또 다른 SQL 문장으로,
 
 - CH6 문제 3번
     
-    ![Untitled](SQL(2)%20200b35f3bb784006a0b0afbf02416c0f/Untitled%205.png)
+    ![Untitled](./img/SQL(2)/Untitled%205.png)
     
     ```sql
     SELECT EMPNO,
@@ -322,7 +322,7 @@ SQL 문장 내에 포함된 또 다른 SQL 문장으로,
     
 - CH8 문제 4번
     
-    ![Untitled](SQL(2)%20200b35f3bb784006a0b0afbf02416c0f/Untitled%206.png)
+    ![Untitled](./img/SQL(2)/Untitled%206.png)
     
     ```sql
     SELECT A.DEPTNO,
@@ -346,7 +346,7 @@ SQL 문장 내에 포함된 또 다른 SQL 문장으로,
     
 - CH9 문제 1번
     
-    ![Untitled](SQL(2)%20200b35f3bb784006a0b0afbf02416c0f/Untitled%207.png)
+    ![Untitled](./img/SQL(2)/Untitled%207.png)
     
     ```sql
     SELECT E.JOB, E.EMPNO, E.ENAME, E.SAL, E.DEPTNO, D.DNAME
@@ -362,16 +362,16 @@ SQL 문장 내에 포함된 또 다른 SQL 문장으로,
     데이터가 합쳐지긴하는데 **JOB, EMPNO, ENAME, SAL, DEPTNO**는 중복되고, 
     DNAME은 종류별로 다 나오는 것이었다. 
     
-    ![Untitled](SQL(2)%20200b35f3bb784006a0b0afbf02416c0f/Untitled%208.png)
+    ![Untitled](./img/SQL(2)/Untitled%208.png)
     
     마지막에 조건 **AND E.DEPTNO = D.DEPTNO;** 을 작성해서 두 테이블간에 같은 조건을 가진
     데이터만 출력하도록 해야했다.
     
-    ![Untitled](SQL(2)%20200b35f3bb784006a0b0afbf02416c0f/Untitled%209.png)
+    ![Untitled](./img/SQL(2)/Untitled%209.png)
     
 - CH9 문제 3번
     
-    ![Untitled](SQL(2)%20200b35f3bb784006a0b0afbf02416c0f/Untitled%2010.png)
+    ![Untitled](./img/SQL(2)/Untitled%2010.png)
     
     ```sql
     SELECT E.EMPNO, E.ENAME, E.JOB, D.DEPTNO, D.DNAME, D.LOC
@@ -395,11 +395,11 @@ SQL 문장 내에 포함된 또 다른 SQL 문장으로,
     (1개 이상 조회되니 ≠ 연산자가 안먹을 수 밖에,,,)
     **NOT IN** 으로 30번 부서의 직책을 걸러주도록 했더니 잘 실행되었다.
     
-    ![Untitled](SQL(2)%20200b35f3bb784006a0b0afbf02416c0f/Untitled%2011.png)
+    ![Untitled](./img/SQL(2)/Untitled%2011.png)
     
 - CH10 문제 5번
     
-    ![Untitled](SQL(2)%20200b35f3bb784006a0b0afbf02416c0f/Untitled%2012.png)
+    ![Untitled](./img/SQL(2)/Untitled%2012.png)
     
     ```sql
     -- 오류 코드
