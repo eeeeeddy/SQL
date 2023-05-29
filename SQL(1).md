@@ -228,5 +228,5 @@
         - INTERSECT : 교집합
     10. **연산자 우선순위**
         
-        ![Untitled](SQL(1)%20c0e3f412bf49494989c833bdff65d56f/Untitled.png)
+        ![Untitled](./img/SQL(1)/Untitled.png)
         
