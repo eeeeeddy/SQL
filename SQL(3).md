@@ -205,7 +205,7 @@ SELECT * FROM USER_TABLES;
 
 - CH13 문제 2번
     
-    ![Untitled](SQL(3)%2040528982cfaa4a579301fa33b3300b58/Untitled.png)
+    ![Untitled](./img/SQL(3)/Untitled.png)
     
     ```sql
     CREATE VIEW EMPIDX_OVER15K (EMPNO, ENAME, JOB, DEPTNO, SAL, COMM)
